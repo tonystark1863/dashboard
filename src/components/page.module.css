@@ -1,0 +1,214 @@
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+}
+
+  .sidebaroptions {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height:100vh;
+    background-color: rgba(80, 80, 79, 0.323);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url('../bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .option {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+    color: rgba(245, 245, 245, 0.519);
+  }
+  
+  .option.active {
+    color: blue;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .rightarea {
+    flex: 1;
+    margin-left: 280px;
+  }
+  
+
+  /* Posts.jsx */
+
+.Postheader{
+  height: 30px;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+
+}
+.thumbnailUrl{
+  border-radius: 50%;
+}
+.post{
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+}
+
+.item{
+  width: 520px;
+  background-color: rgba(78, 77, 77, 0.308);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.body{
+  width: 500px;
+  margin-left: 15px;
+  padding-bottom: 30px;
+}
+
+.container{
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+
+.actionContainer{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+.loadingAnimation {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3; 
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite; 
+  margin: 20px auto; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* search.module.css */
+
+.searchBar {
+  margin-bottom: 20px;
+  width: 500px;
+  background-color: #2c2b2b;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+}
+
+.searchBar input {
+
+  padding: 10px;
+  border: 1px solid #2c2b2b;
+  font-size: 16px;
+  outline: none;
+  background-color: #2c2b2b;
+
+  margin-left: 40px;
+}
+
+.searchBar input:focus {
+  border-color: #41414100;
+}
+.searchIcon {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  animation: pulse 1s infinite alternate; 
+}
+
+.searchicon {
+  color: blue; 
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+
+.dummyArea{
+  background-color: #2c2b2b;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height:100vh;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url('../bg.jpg'); /* Specify the path to your image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center;
+
+
+}
+.telegramContainer {
+  width: 100px;
+  height: 100px;
+}
+
+
+@keyframes fly {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move the icon up */
+  }
+  100% {
+    transform: translateY(0); /* Move the icon back to its original position */
+  }
+}
+
+.telegram {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  fill: rgb(19, 8, 114); /* Change the color to light blue */
+  animation: fly 2s ease-in-out infinite; /* Apply the flying animation */
+}
+
+.dashboard{
+  font-size: larger;
+  margin-left: 5px;
+}
